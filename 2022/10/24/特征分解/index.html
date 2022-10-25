@@ -6,7 +6,7 @@
 <meta property="og:description" content="特征分解奇异值分解 Singular value decomposition奇异值分解，相比于特征分解可以在矩阵不为方阵的条件下对矩阵进行分解。 假设矩阵A是一个m*n的矩阵，则定义矩阵A的SVD为：  A &#x3D; U\Sigma V^T&#x3D; (orthogonal)(diagonal)(orthogonal)$其中U是m×m的矩阵，\Sigma 是m×n的对角矩阵（主对角线上为奇异值，除主对角线外皆为">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-10-24T03:34:17.000Z">
-<meta property="article:modified_time" content="2022-10-24T03:34:32.136Z">
+<meta property="article:modified_time" content="2022-10-25T03:06:16.997Z">
 <meta property="article:author" content="Ephemeral">
 <meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/10/24/%E7%89%B9%E5%BE%81%E5%88%86%E8%A7%A3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
@@ -50,7 +50,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2022-10-24 11:34:32'
+  postUpdate: '2022-10-25 11:06:16'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -142,7 +142,7 @@
     })(window)</script><!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Ephemeral" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Ephemeral</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">特征分解</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-10-24T03:34:17.000Z" title="Created 2022-10-24 11:34:17">2022-10-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-10-24T03:34:32.136Z" title="Updated 2022-10-24 11:34:32">2022-10-24</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="特征分解"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="特征分解"><a href="#特征分解" class="headerlink" title="特征分解"></a>特征分解</h2><h2 id="奇异值分解-Singular-value-decomposition"><a href="#奇异值分解-Singular-value-decomposition" class="headerlink" title="奇异值分解 Singular value decomposition"></a>奇异值分解 Singular value decomposition</h2><p>奇异值分解，相比于特征分解可以在矩阵不为方阵的条件下对矩阵进行分解。</p>
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Ephemeral</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">特征分解</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-10-24T03:34:17.000Z" title="Created 2022-10-24 11:34:17">2022-10-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-10-25T03:06:16.997Z" title="Updated 2022-10-25 11:06:16">2022-10-25</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="特征分解"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="特征分解"><a href="#特征分解" class="headerlink" title="特征分解"></a>特征分解</h2><h2 id="奇异值分解-Singular-value-decomposition"><a href="#奇异值分解-Singular-value-decomposition" class="headerlink" title="奇异值分解 Singular value decomposition"></a>奇异值分解 Singular value decomposition</h2><p>奇异值分解，相比于特征分解可以在矩阵不为方阵的条件下对矩阵进行分解。</p>
 <p>假设矩阵A是一个m*n的矩阵，则定义矩阵A的SVD为：</p>
 <script type="math/tex; mode=display">
 A = U\Sigma V^T= (orthogonal)(diagonal)(orthogonal)</script><p>$其中U是m×m的矩阵，\Sigma 是m×n的对角矩阵（主对角线上为奇异值，除主对角线外皆为0），V是n×n矩阵；\\且U、V均满足U^TU = I,V^TV = I$ </p>
@@ -155,23 +155,18 @@ A=U\Sigma V^T \Rightarrow  A^T=V\Sigma U^T \Rightarrow A^TA = V\Sigma U^TU\Sigma
 <p>$U^TU=I,\Sigma^T=\Sigma$；</p>
 <p>同时可证明特征值和奇异值满足如下关系：$\sigma_i= \sqrt{\lambda_i}$，即通过求出$A^TA$的特征值取平方的方式求得奇异值</p>
 <h2 id="Ridge-Regression"><a href="#Ridge-Regression" class="headerlink" title="Ridge Regression"></a>Ridge Regression</h2><h2 id="LASSO"><a href="#LASSO" class="headerlink" title="LASSO"></a>LASSO</h2><h2 id="Kernel-Methods"><a href="#Kernel-Methods" class="headerlink" title="Kernel Methods"></a>Kernel Methods</h2><p>高维空间比低维空间更易线性可分</p>
-<p><strong>核函数</strong>：$K:X×X\rightarrow R,\forall X,Z 属于X,则K(X,Z)为核函数$</p>
-<p><strong>正定核函数：</strong>$K:X×X\rightarrow R,\forall X,Z 属于X,则K(X,Z)为核函数\\如果\exist:\phi：X\rightarrow R, \in H（希尔伯特空间）$</p>
-<p><strong>Hilbert Space:</strong> 完备的，可能是无限维的，被赋予内积运算的线性空间</p>
+<p><strong>核函数: </strong> $ K:X×X\rightarrow R,\forall X,Z\in X,则K(X,Z)为核函数$</p>
+<p><strong>正定核函数：</strong>$K:X×X\rightarrow R,\forall X,Z\in X,则K(X,Z)为核函数，如果{\exist}\Phi：X\rightarrow R, \in H（希尔伯特空间）$</p>
+<p><strong>Hilbert Space:</strong>  完备的，可能是无限维的，被赋予内积运算的线性空间</p>
 <ul>
 <li><p>线性空间：向量空间（加法和数乘）</p>
 </li>
 <li><p>完备：对极限操作是封闭的（即：若$K_n\in H，且\lim_{n \to \infty}\in H，则H为封闭空间$）</p>
 </li>
 <li><p>内积：</p>
-<ul>
-<li><p>对称性: $<f,g>=<g,f>$</p>
-</li>
-<li><p>正定性: $<f,f>\ge 0，当=成立时\Leftrightarrow f=0$</p>
-</li>
-<li><p>线性: $<r_1f_1+r_2f_2,g>=r_1<f_1,g>+r_2<f_2,g>$</p>
-</li>
-</ul>
+<p>$对称性: <f,g>=<g,f>$</p>
+<p>$正定性: <f,f>\ge 0，当=成立时\Leftrightarrow f=0$</p>
+<p>$线性: <r_1f_1+r_2f_2,g>=r_1<f_1,g>+r_2<f_2,g>$</p>
 </li>
 </ul>
 <p><strong>$证明：K(X,Z)=&lt;\phi (X),\phi (Z)&gt; \Leftrightarrow Gram\ matrix 为半正定$</strong></p>
