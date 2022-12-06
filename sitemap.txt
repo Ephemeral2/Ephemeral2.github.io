@@ -1,3 +1,6 @@
+http://example.com/2022/11/28/Machine-Learning/
+http://example.com/2022/11/11/Leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/
+http://example.com/2022/10/25/Python-%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/
 http://example.com/2022/10/24/%E7%89%B9%E5%BE%81%E5%88%86%E8%A7%A3/
 http://example.com/2022/10/24/%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95-Classification/
 http://example.com/2022/03/30/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C+%E5%85%A8%E8%BF%9E%E6%8E%A5+Tahn+Relu/
