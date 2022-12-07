@@ -6,7 +6,7 @@
 <meta property="og:description" content="Intro0.1. Derivatives设向量$X为\begin{pmatrix} X_1\\X_2\\X_3\\…\\X_p \end{pmatrix}\$ 0.2. TaylorChapter 1Chapter 2Chapter 3Chapter 44.1. Singular Value Decomposition4.2. Least Squares4.3. Ridge Regression">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-12-02T07:20:21.000Z">
-<meta property="article:modified_time" content="2022-12-07T01:59:53.967Z">
+<meta property="article:modified_time" content="2022-12-07T08:40:26.050Z">
 <meta property="article:author" content="Ephemeral">
 <meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/12/02/Statistical-Data-Mining/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
@@ -50,7 +50,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2022-12-07 09:59:53'
+  postUpdate: '2022-12-07 16:40:26'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -142,10 +142,10 @@
     })(window)</script><!-- hexo injector head_end start -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 <!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Ephemeral" type="application/atom+xml">
-</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Ephemeral</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">statistical data mining</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-12-02T07:20:21.000Z" title="Created 2022-12-02 15:20:21">2022-12-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-12-07T01:59:53.967Z" title="Updated 2022-12-07 09:59:53">2022-12-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="statistical data mining"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h1><h2 id="0-1-Derivatives"><a href="#0-1-Derivatives" class="headerlink" title="0.1. Derivatives"></a>0.1. Derivatives</h2><p>设向量$X为\begin{pmatrix} X_1\\X_2\\X_3\\…\\X_p \end{pmatrix}\$</p>
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Ephemeral</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">statistical data mining</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-12-02T07:20:21.000Z" title="Created 2022-12-02 15:20:21">2022-12-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-12-07T08:40:26.050Z" title="Updated 2022-12-07 16:40:26">2022-12-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="statistical data mining"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h1><h2 id="0-1-Derivatives"><a href="#0-1-Derivatives" class="headerlink" title="0.1. Derivatives"></a>0.1. Derivatives</h2><p>设向量$X为\begin{pmatrix} X_1\\X_2\\X_3\\…\\X_p \end{pmatrix}\$</p>
 <h2 id="0-2-Taylor"><a href="#0-2-Taylor" class="headerlink" title="0.2. Taylor"></a>0.2. Taylor</h2><h1 id="Chapter-1"><a href="#Chapter-1" class="headerlink" title="Chapter 1"></a>Chapter 1</h1><h1 id="Chapter-2"><a href="#Chapter-2" class="headerlink" title="Chapter 2"></a>Chapter 2</h1><h1 id="Chapter-3"><a href="#Chapter-3" class="headerlink" title="Chapter 3"></a>Chapter 3</h1><h1 id="Chapter-4"><a href="#Chapter-4" class="headerlink" title="Chapter 4"></a>Chapter 4</h1><h2 id="4-1-Singular-Value-Decomposition"><a href="#4-1-Singular-Value-Decomposition" class="headerlink" title="4.1. Singular Value Decomposition"></a>4.1. Singular Value Decomposition</h2><h2 id="4-2-Least-Squares"><a href="#4-2-Least-Squares" class="headerlink" title="4.2. Least Squares"></a>4.2. Least Squares</h2><h2 id="4-3-Ridge-Regression"><a href="#4-3-Ridge-Regression" class="headerlink" title="4.3. Ridge Regression"></a>4.3. Ridge Regression</h2><h2 id="4-4-Lasso"><a href="#4-4-Lasso" class="headerlink" title="4.4. Lasso"></a>4.4. Lasso</h2><h1 id="Chapter-5"><a href="#Chapter-5" class="headerlink" title="Chapter 5"></a>Chapter 5</h1><h2 id="5-1-Classification"><a href="#5-1-Classification" class="headerlink" title="5.1 Classification"></a>5.1 Classification</h2><p><strong>分类（classification）</strong>：分类任务就是通过学习得到一个目标函数$f$（或分类模型），把每个属性集x映射到一个预先定义的类标签（Label）$y$。</p>
 <p><strong>建立分类模型的一般方法：</strong></p>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\SouthEast.png" alt="img"></p>
+<p><img src="../img/SouthEast.png" alt="SouthEast"></p>
 <h2 id="5-2-Decision-Tree"><a href="#5-2-Decision-Tree" class="headerlink" title="5.2 Decision Tree"></a>5.2 Decision Tree</h2><h3 id="5-2-1-结点："><a href="#5-2-1-结点：" class="headerlink" title="5.2.1 结点："></a>5.2.1 结点：</h3><p><strong>决策树中包含三种结点：</strong></p>
 <ul>
 <li>根结点（root node）: the first criterion. No incoming edge.</li>
@@ -169,14 +169,14 @@
 <p><strong>序数属性：</strong>序数属性也可以产生二元或多路划分，只要不违背序数属性值的有序性，就可以对属性值进行分组。</p>
 <p><strong>连续属性：</strong>to be continued…</p>
 <h3 id="5-2-4-选择最佳划分的度量"><a href="#5-2-4-选择最佳划分的度量" class="headerlink" title="5.2.4 选择最佳划分的度量"></a>5.2.4 <strong>选择最佳划分的度量</strong></h3><p>选择最佳划分的度量通常是根据划分后子女结点不纯性的程度。</p>
-<h4 id="5-2-4-1-Measures-of-Impurity"><a href="#5-2-4-1-Measures-of-Impurity" class="headerlink" title="5.2.4.1 Measures of Impurity"></a>5.2.4.1 Measures of Impurity</h4><p>​    <img src="https://pic4.zhimg.com/80/v2-e5cddc4aae60bd7a14a8089afb0e5453_1440w.webp" alt="img" style="zoom:50%;" /></p>
+<h4 id="5-2-4-1-Measures-of-Impurity"><a href="#5-2-4-1-Measures-of-Impurity" class="headerlink" title="5.2.4.1 Measures of Impurity"></a>5.2.4.1 Measures of Impurity</h4><p>​    <img src="../img/v2-e5cddc4aae60bd7a14a8089afb0e5453_1440w.webp" alt="img" style="zoom:50%;" /></p>
 <p>​    为了确定测试条件的效果，我们需要比较父结点（划分前）的不纯程度和子结点（划分后）的不纯程度，它们的差越大，测试条件的效果就越好。增益 $Δ $：</p>
-<p>​    <img src="https://pic1.zhimg.com/80/v2-dc00c81ccff5b057185c5f07dbc207e8_1440w.webp" alt="img" style="zoom:50%;" />    </p>
+<p>​    <img src="../img/v2-dc00c81ccff5b057185c5f07dbc207e8_1440w.webp" alt="img" style="zoom:50%;" />    </p>
 <p>决策树算法通常选择最大化增益 $Δ $的测试条件。因为对所有的测试条件来说，$I(parent)$是一样的，所以<strong>最大化增益等价于最小化子结点的不纯性度量的加权平均值</strong>。特别地，当选择熵作为上述增益公式的不纯性度量时，称该增益为<strong>信息增益</strong>。</p>
 <h3 id="5-2-5-Model-over-fitting"><a href="#5-2-5-Model-over-fitting" class="headerlink" title="5.2.5 Model over-fitting"></a>5.2.5 Model over-fitting</h3><p>分类模型的误差大致分为两种：训练误差和泛化误差。</p>
 <p>拟合不足：训练误差与检验误差都很大</p>
 <p>过分拟合：训练误差下降但是检验误差上升</p>
-<p><img src="https://img-blog.csdn.net/20180909163503505?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RPTU9DQVQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img" style="zoom:50%;" /></p>
+<p><img src="../img/70.png" alt="img" style="zoom:50%;" /></p>
 <p>过拟合的原因：</p>
 <ol>
 <li><p>噪声导致的过拟合：样本被错误标记。</p>
@@ -197,15 +197,15 @@
 <ol>
 <li>熵：设D为用类别对训练元组进行的划分，则D的熵表示为：</li>
 </ol>
-<p><img src="https://img-blog.csdn.net/20180119095021166?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVE9NT0NBVA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" style="zoom:50%;" /></p>
+<p><img src="../img/Center.png" alt="img" style="zoom:50%;" /></p>
 <p>其中$p_i$表示第i个类别在整个训练元组中出现的概率，可以用属于此类别元素的数量除以训练元组元素总数量作为估计。熵的实际意义表示是D中元组的类标号所需要的平均信息量。</p>
 <ol>
 <li>期望信息：</li>
 </ol>
-<p><img src="https://img-blog.csdn.net/20180119095411084?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVE9NT0NBVA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" style="zoom:50%;" /></p>
+<p><img src="../img/Center-16704020074006.png" alt="img" style="zoom:50%;" /></p>
 <p>现在我们假设将训练元组D按属性A进行划分，则A对D划分的期望信息为：</p>
 <ol>
-<li>信息增益：<img src="https://img-blog.csdn.net/20180119095449253?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVE9NT0NBVA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" style="zoom:50%;" /></li>
+<li>信息增益：<img src="../img/Center-16704020088948.png" alt="img" style="zoom:50%;" /></li>
 </ol>
 <h3 id="5-2-6-Random-Forest"><a href="#5-2-6-Random-Forest" class="headerlink" title="5.2.6 Random Forest"></a>5.2.6 Random Forest</h3><p>​        随机森林是一种以决策树为基分类器的集成算法，通过组合多棵独立的决策树后根据投票或取均值的方式得到最终预测结果的机器学习方法，往往比单棵树具有更高的准确率和更强的稳定性。</p>
 <p>​        随机森林相比于决策树拥有出色的性能主要取决于随机抽取样本和特征和集成算法，前者让它具有更稳定的抗过拟合能力，后者让它有更高的准确率。</p>
@@ -239,14 +239,14 @@ P(A_1, A_2, . . . , A_n|C_j) = \prod^{n}_iP(A_i|C_j)</script></li>
 P(A_i|C) = \frac{N_{iC}}{N_C}</script></li>
 <li><p>应用Laplace Smoothing：</p>
 <script type="math/tex; mode=display">
-P(A_i|C) = \frac{N_{iC}+a}{N_C+a\times(\#A_i)}</script><p>其中$(#A_i)$是$A_i$可能属于的总类数、$α&gt;0$是一个参数。为了简单起见，我们将始终设定$α=1$</p>
+P(A_i|C) = \frac{N_{iC}+a}{N_C+a\times(\#A_i)}</script><p>其中(#$A_i$)是$A_i$可能属于的总类数、$α&gt;0$是一个参数。为了简单起见，我们将始终设定$α=1$</p>
 </li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="5-4-Artificial-Neural-Networks-ANN’s"><a href="#5-4-Artificial-Neural-Networks-ANN’s" class="headerlink" title="5.4 Artificial Neural Networks (ANN’s)"></a>5.4 Artificial Neural Networks (ANN’s)</h2><p><img src="C:\Users\NOID_\AppData\Roaming\Typora\typora-user-images\image-20221203115345413.png" alt="image-20221203115345413" style="zoom:50%;" /></p>
+<h2 id="5-4-Artificial-Neural-Networks-ANN’s"><a href="#5-4-Artificial-Neural-Networks-ANN’s" class="headerlink" title="5.4 Artificial Neural Networks (ANN’s)"></a>5.4 Artificial Neural Networks (ANN’s)</h2><p><img src="../img/image-20221203115345413.png" alt="image-20221203115345413" style="zoom:50%;" /></p>
 <ul>
 <li><p>$Z_i = σ(α_i + β_i^T X), i = 1,2,3$</p>
 </li>
@@ -267,7 +267,7 @@ l(W_1, b_1, W_2, b_2) = \frac{1}{m}\sum^{m}_{j=1}V(Y^j, Y(X^j; W_1, b_1, W_2, b_
 <p>For example, if $\alpha = \begin{pmatrix} \alpha_1\\\alpha_2\end{pmatrix}\$ and $\beta = \begin{pmatrix} \beta_1\\\beta_2\end{pmatrix}\$ ，可以应用如下损失函数</p>
 </li>
 </ul>
-<p><img src="C:\Users\NOID_\AppData\Roaming\Typora\typora-user-images\image-20221203122616849.png" alt="image-20221203122616849" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221203122616849.png" alt="image-20221203122616849" style="zoom:50%;" /></p>
 <ul>
 <li>通过最小化$l(W_1^<em>,b_1^</em>,W_2^<em>,b_2^</em>)$的最优参数<script type="math/tex; mode=display">
 (W_1^*,b_1^*,W_2^*,b_2^*) = argmin l(W_1,b_1,W_2,b_2)</script></li>
@@ -299,11 +299,11 @@ min\abs\beta\abs\,\\ subject\ to\ y_i(x_i^T\beta+\beta_0)\geqslant1,i=1,2,...,m<
 <p>则通常的SVM可定义为：</p>
 <p><img src="C:\Users\NOID_\AppData\Roaming\Typora\typora-user-images\image-20221203210908752.png" alt="image-20221203210908752" style="zoom:50%;" /></p>
 <p>$\phi_h(t)=max\{1-t,0\}$被叫做边缘损失函数（hinge loss function）</p>
-<h3 id="5-5-3-Kernel-SVM"><a href="#5-5-3-Kernel-SVM" class="headerlink" title="5.5.3 Kernel SVM"></a>5.5.3 Kernel SVM</h3><p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221203211159157.png" alt="image-20221203211159157" style="zoom:50%;" /></p>
+<h3 id="5-5-3-Kernel-SVM"><a href="#5-5-3-Kernel-SVM" class="headerlink" title="5.5.3 Kernel SVM"></a>5.5.3 Kernel SVM</h3><p><img src="../img/image-20221203211159157.png" alt="image-20221203211159157" style="zoom:50%;" /></p>
 <h2 id="5-6-Logistic-Regressin"><a href="#5-6-Logistic-Regressin" class="headerlink" title="5.6 Logistic Regressin"></a>5.6 Logistic Regressin</h2><p>可以用于<strong>多元</strong>和<strong>二元分类</strong>问题</p>
 <ul>
 <li><p>二元数据（Binary data）</p>
-<p><img src="C:\Users\NOID_\AppData\Roaming\Typora\typora-user-images\image-20221203212020766.png" alt="image-20221203212020766" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221203212020766.png" alt="image-20221203212020766" style="zoom:50%;" /></p>
 </li>
 </ul>
 <p>$\phi(t) = \frac{e^t}{1+e^t}$   (Sigmoid function)</p>
@@ -315,19 +315,19 @@ min\abs\beta\abs\,\\ subject\ to\ y_i(x_i^T\beta+\beta_0)\geqslant1,i=1,2,...,m<
 <li><p>$y_i\in\{-1,1\}$</p>
 </li>
 <li><p>逻辑回归算法+正则化参数定义如下：</p>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221203223605266.png" alt="image-20221203223605266" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221203223605266.png" alt="image-20221203223605266" style="zoom:50%;" /></p>
 </li>
 <li><p>预测函数$f<em>(x)$为$x^T\beta^</em>$内积的指示函数</p>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221203223737416.png" alt="image-20221203223737416" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221203223737416.png" alt="image-20221203223737416" style="zoom:50%;" /></p>
 </li>
 <li><p>设：</p>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221203223837335.png" alt="image-20221203223837335" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221203223837335.png" alt="image-20221203223837335" style="zoom:50%;" /></p>
 <p>则逻辑回归问题转化为最小化$\xi(\beta)+\lambda||\beta||^2$,该问题为凸优化</p>
 </li>
 <li><p>利用Sigmoid函数$\phi(t)$ rewrite $\xi(\beta)$</p>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221203225051631.png" alt="image-20221203225051631" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221203225051631.png" alt="image-20221203225051631" style="zoom:50%;" /></p>
 </li>
-<li><p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221203225111101.png" alt="image-20221203225111101" style="zoom:50%;" /></p>
+<li><p><img src="../img/image-20221203225111101-167040203970210.png" alt="image-20221203225111101" style="zoom:50%;" /></p>
 </li>
 <li><p>若设$\lambda=0$，则逻辑回归整体会过拟合</p>
 </li>
@@ -337,16 +337,16 @@ min\abs\beta\abs\,\\ subject\ to\ y_i(x_i^T\beta+\beta_0)\geqslant1,i=1,2,...,m<
 <li><strong>Proof:</strong> 若$\beta^<em>$为最小值，则 $\xi(2\beta^</em>)&lt;\xi(\beta^*)$</li>
 </ul>
 </li>
-<li><p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221203232434814.png" alt="image-20221203232434814" style="zoom:50%;" /></p>
+<li><p><img src="../img/image-20221203232434814-167040204451511.png" alt="image-20221203232434814" style="zoom:50%;" /></p>
 </li>
-<li><p><img src="C:\Users\NOID_\AppData\Roaming\Typora\typora-user-images\image-20221203232457480.png" alt="image-20221203232457480" style="zoom:50%;" /></p>
+<li><p><img src="../img/image-20221203232457480.png" alt="image-20221203232457480" style="zoom:50%;" /></p>
 </li>
 </ul>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221203232705459.png" alt="image-20221203232705459" style="zoom:50%;" /></p>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221203232719841.png" alt="image-20221203232719841" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221203232705459.png" alt="image-20221203232705459" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221203232719841-167040205072512.png" alt="image-20221203232719841" style="zoom:50%;" /></p>
 <p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221203232742134.png" alt="image-20221203232742134" style="zoom:50%;" /></p>
-<h2 id="5-7-Evaluating-the-Performance-of-Classifiers"><a href="#5-7-Evaluating-the-Performance-of-Classifiers" class="headerlink" title="5.7 Evaluating the Performance of Classifiers"></a>5.7 Evaluating the Performance of Classifiers</h2><h3 id="5-7-1-Score-based-classifier"><a href="#5-7-1-Score-based-classifier" class="headerlink" title="5.7.1 Score-based classifier"></a>5.7.1 Score-based classifier</h3><p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221205094941810.png" alt="image-20221205094941810" style="zoom: 33%;" /></p>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221203233510289.png" alt="image-20221203233510289" style="zoom:50%;" /></p>
+<h2 id="5-7-Evaluating-the-Performance-of-Classifiers"><a href="#5-7-Evaluating-the-Performance-of-Classifiers" class="headerlink" title="5.7 Evaluating the Performance of Classifiers"></a>5.7 Evaluating the Performance of Classifiers</h2><h3 id="5-7-1-Score-based-classifier"><a href="#5-7-1-Score-based-classifier" class="headerlink" title="5.7.1 Score-based classifier"></a>5.7.1 Score-based classifier</h3><p><img src="../img/image-20221205094941810.png" alt="image-20221205094941810" style="zoom: 33%;" /></p>
+<p><img src="../img/image-20221203233510289.png" alt="image-20221203233510289" style="zoom:50%;" /></p>
 <h3 id="5-7-2-ROC-Curve"><a href="#5-7-2-ROC-Curve" class="headerlink" title="5.7.2 ROC Curve"></a>5.7.2 ROC Curve</h3><ul>
 <li><p>对于$λ=-∞$，分类器预测一切为正</p>
 <ul>
@@ -373,26 +373,26 @@ min\abs\beta\abs\,\\ subject\ to\ y_i(x_i^T\beta+\beta_0)\geqslant1,i=1,2,...,m<
 <h1 id="Chapter-6"><a href="#Chapter-6" class="headerlink" title="Chapter 6"></a>Chapter 6</h1><h1 id="Chapter-7"><a href="#Chapter-7" class="headerlink" title="Chapter 7"></a>Chapter 7</h1><h2 id="7-1-Dimension-Reduction"><a href="#7-1-Dimension-Reduction" class="headerlink" title="7.1 Dimension Reduction"></a>7.1 Dimension Reduction</h2><h3 id="7-1-1-Principal-Component-Analysis-PCA"><a href="#7-1-1-Principal-Component-Analysis-PCA" class="headerlink" title="7.1.1 Principal Component Analysis (PCA)"></a>7.1.1 Principal Component Analysis (PCA)</h3><p><strong>Step 1:</strong> data normalization</p>
 <p><strong>Step 2:</strong> singular value decomposition (SVD)</p>
 <p><strong>Step 3:</strong> linear transform to achieve dimension reduction</p>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221206100035668.png" alt="image-20221206100035668" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221206100035668.png" alt="image-20221206100035668" style="zoom:50%;" /></p>
 <h2 id="7-2-Cluster-Analysis"><a href="#7-2-Cluster-Analysis" class="headerlink" title="7.2 Cluster Analysis"></a>7.2 Cluster Analysis</h2><h3 id="7-2-1-K-means-Clustering"><a href="#7-2-1-K-means-Clustering" class="headerlink" title="7.2.1 K-means Clustering"></a>7.2.1 K-means Clustering</h3><p>Step1：选择K个点作为初始中心点<br>Step2：通过将所有的点分配给最接近的中心点形成K个集群。<br>Step3：重新计算每个簇的中心点。如果所有计算出来的中心点与前面Step2的结果相同，则停止，否则重新执行Step2。</p>
 <h4 id="7-2-1-1-Choosing-the-right-K"><a href="#7-2-1-1-Choosing-the-right-K" class="headerlink" title="7.2.1.1 Choosing the right K"></a>7.2.1.1 Choosing the right K</h4><ul>
 <li>WCSS (<strong>Within Cluster Sum of Squares</strong>)： 评估中心点K的方式</li>
 </ul>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221206103838184.png" alt="image-20221206103838184" style="zoom:33%;" /></p>
+<p><img src="../img/image-20221206103838184.png" alt="image-20221206103838184" style="zoom:33%;" /></p>
 <ul>
 <li><p>The Elbow Method：利用The Elbow Method根据WCSS选择最佳K值</p>
 <p>结果显示，在3次之后，WCSS没有明显下降，所以3次是最好的。</p>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221206110430866.png" alt="image-20221206110430866" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221206110430866.png" alt="image-20221206110430866" style="zoom:50%;" /></p>
 </li>
 <li><p>Shortcomings</p>
 <ul>
 <li><p>多次迭代：有帮助，但概率不在你这边；</p>
 </li>
 <li><p>可能产生空聚类。例如，我们可以重新放置空簇的中心点，以便使下面的SSE最小化；</p>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221206112123894.png" alt="image-20221206112123894" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221206112123894.png" alt="image-20221206112123894" style="zoom:50%;" /></p>
 </li>
 <li><p>当点分布在流形上但使用环境距离时，可能会得到不好的结果；</p>
-<p><img src="D:\Personal Blog\Blog Content\source\_posts\pic\image-20221206112107419.png" alt="image-20221206112107419" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221206112107419.png" alt="image-20221206112107419" style="zoom:50%;" /></p>
 </li>
 </ul>
 </li>
@@ -421,10 +421,10 @@ min\abs\beta\abs\,\\ subject\ to\ y_i(x_i^T\beta+\beta_0)\geqslant1,i=1,2,...,m<
 <li><p>$x_1, … … , x_n$是观测值</p>
 </li>
 <li><p>则似然函数的定义为：</p>
-<p><img src="C:\Users\NOID_\AppData\Roaming\Typora\typora-user-images\image-20221206162104316.png" alt="image-20221206162104316" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221206162104316.png" alt="image-20221206162104316" style="zoom:50%;" /></p>
 </li>
 </ul>
-<h4 id="7-3-1-2-Log-likelihood-Function"><a href="#7-3-1-2-Log-likelihood-Function" class="headerlink" title="7.3.1.2 Log-likelihood Function"></a>7.3.1.2 Log-likelihood Function</h4><p><img src="C:\Users\NOID_\AppData\Roaming\Typora\typora-user-images\image-20221206162151305.png" alt="image-20221206162151305" style="zoom:50%;" /></p>
+<h4 id="7-3-1-2-Log-likelihood-Function"><a href="#7-3-1-2-Log-likelihood-Function" class="headerlink" title="7.3.1.2 Log-likelihood Function"></a>7.3.1.2 Log-likelihood Function</h4><p><img src="../img/image-20221206162151305.png" alt="image-20221206162151305" style="zoom:50%;" /></p>
 <ul>
 <li><p>如果参数$θ使L(θ)$最大化，它也会使$l(θ)$最大化；</p>
 </li>
@@ -434,13 +434,13 @@ min\abs\beta\abs\,\\ subject\ to\ y_i(x_i^T\beta+\beta_0)\geqslant1,i=1,2,...,m<
 </li>
 </ul>
 <h4 id="7-3-1-3-maximum-likelihood-estimator-MLE"><a href="#7-3-1-3-maximum-likelihood-estimator-MLE" class="headerlink" title="7.3.1.3 maximum likelihood estimator, MLE"></a>7.3.1.3 maximum likelihood estimator, <strong>MLE</strong></h4><p>最大似然估计器（MLE）$\hatθ_{mle} = \hatθ_{mle}(X_1, … , X_n)$被定义为是使似然函数 $L(θ)$最大化的参数（或者等同于使对数似然函数 $l(θ)$最大化）</p>
-<p><img src="C:\Users\NOID_\AppData\Roaming\Typora\typora-user-images\image-20221206170004672.png" alt="image-20221206170004672" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221206170004672.png" alt="image-20221206170004672" style="zoom:50%;" /></p>
 <p><strong>Remark</strong></p>
 <p>$\hatθ$是样本 $\hatθ(X_1，…，X_n)$的一个函数，因此它是一个随机变量</p>
 <p>根据我们之前的定义，MLE $\hatθ$是一个统计量，也被称为点估计器。</p>
 <p><strong>Remark</strong></p>
 <p>如果未知分布$p$是由超过一个的参数指定的。$ p = p(x|θ_1, . . , θ_k)$，那么似然函数定义为</p>
-<p><img src="C:\Users\NOID_\AppData\Roaming\Typora\typora-user-images\image-20221206172155537.png" alt="image-20221206172155537" style="zoom:50%;" /></p>
+<p><img src="../img/image-20221206172155537.png" alt="image-20221206172155537" style="zoom:50%;" /></p>
 <p>而对数似然函数被定义为$l(θ_1, . . , θ_k) = logL(θ_1, . . , θ_k)$。MLE是使$L或l$最大化的向量$（\hatθ_1, …, \hatθ_k）$。</p>
 <h5 id="How-to-find-the-MLE"><a href="#How-to-find-the-MLE" class="headerlink" title="How to find the MLE"></a>How to find the MLE</h5><p>求函数$L(θ)$的最大值的通常需要以下两个步骤：</p>
 <p>Step1：通过下式求$θ$</p>
